@@ -4,7 +4,7 @@ var port = 3001;
 var open = require('amqplib').connect('amqp://localhost');
  
 // Publisher
-var q = 'tasks';
+var q = 'u1-u2';
 
 open.then(function(conn) {
 	return conn.createChannel();
